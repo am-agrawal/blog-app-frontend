@@ -1,5 +1,5 @@
 const config = {
-  API_URL: import.meta.env.REACT_APP_API_URL || 'http://localhost:8000',
+  backendUrl: import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000',
 };
 
 export default config;

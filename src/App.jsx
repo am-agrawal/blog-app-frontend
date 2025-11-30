@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <>
-      <div>{config.API_URL}</div>
+      <div>{config.backendUrl}</div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
