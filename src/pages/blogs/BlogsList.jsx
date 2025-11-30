@@ -11,9 +11,10 @@ function BlogsList() {
 
   useEffect(() => {
     BlogsService.getAll(page).then(res => {
-      setBlogs(res.data.blogs)});
-      // const totalCount = res.data.total_count;
-      // setTotalPages(Math.ceil(totalCount / config.blogs.pageSize));
+      setBlogs(res.data.blogs)
+      const totalCount = res.data.total_count;
+      setTotalPages(Math.ceil(totalCount / config.blogs.pageSize));
+    });
   }, [page]);
 
   return (
